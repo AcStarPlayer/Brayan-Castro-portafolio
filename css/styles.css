@@ -230,13 +230,13 @@ input, textarea {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Tarjetas de portafolio más modernas */
+/* Tarjetas de portafolio */
 .portfolio-item {
     border: 1px solid rgba(0,0,0,0.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-/* Ajuste de Hero para que destaque el texto */
+/* Ajuste de Hero texto */
 .hero h1 {
     font-size: 3.5rem;
     color: var(--deep);
@@ -257,4 +257,140 @@ input, textarea {
 .section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* SOCIAL ICONS */
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    background: #111;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    background: #2563eb;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* LinkedIn */
+.social-icon:nth-child(1):hover {
+    background: #0077b5; 
+}
+
+/* GitHub */
+.social-icon:nth-child(2):hover {
+    background: #333; 
+}
+
+/* Telegram */
+.social-icon:nth-child(3):hover {
+    background: #229ED9; 
+}
+
+.contact-mini {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #AD906C;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-item i {
+    color: #5D4630;
+    font-size: 16px;
+}
+
+.contact-item:hover {
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ===== EDUCACION ESTILO CV PROFESIONAL ===== */
+
+.cv-item {
+    margin-bottom: 28px;
+}
+
+/* linea superior */
+.cv-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* institución */
+.cv-place {
+    margin: 0;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* fechas derecha */
+.cv-date {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* carrera */
+.cv-title {
+    margin: 4px 0 0 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* ===== FOOTER PROFESIONAL ===== */
+
+.footer {
+    background: var(--dark);
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-name {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.footer-rights {
+    font-size: 13px;
+    opacity: 0.7;
 }
