@@ -5,108 +5,521 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Brayan Castro</title>
 
+    <!-- SEO -->
+
+    <meta
+        name="description"
+        content="Portafolio profesional de Brayan Castro, Ingeniero de Software Full Stack especializado en React, Node.js, Java, Spring Boot, Unity y desarrollo web moderno."
+    >
+
+    <meta
+        name="keywords"
+        content="Brayan Castro, Ingeniero de Software, Full Stack Developer, React Developer, Java Developer, Node.js, Portfolio, Software Engineer"
+    >
+
+    <meta name="author" content="Brayan Castro">
+
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+
+    <!-- OPEN GRAPH -->
+
+    <meta property="og:title" content="Brayan Castro | Software Engineer">
+
+    <meta
+        property="og:description"
+        content="Portafolio profesional Full Stack Developer especializado en React, Node.js, Java y tecnologías modernas."
+    >
+
+    <meta
+        property="og:image"
+        content="https://res.cloudinary.com/dwpyi1f7b/image/upload/v1775525037/WhatsApp_Image_2026-04-05_at_9.44.39_PM__1_-removebg-preview_tvni3q.png"
+    >
+
+    <meta property="og:type" content="website">
+
+    <!-- TWITTER -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Brayan Castro | Software Engineer"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Full Stack Developer Portfolio"
+    >
+
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#836C4F">
+    <link
+        rel="preload"
+        as="image"
+        href="https://res.cloudinary.com/dwpyi1f7b/image/upload/v1775525037/WhatsApp_Image_2026-04-05_at_9.44.39_PM__1_-removebg-preview_tvni3q.png"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- LOADER -->
+<div id="loader">
+
+    <img
+        src="loading/loading2.gif"
+        alt="Loading..."
+        class="loader-gif"
+    >
+
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div id="progress-bar"></div>
+
+<!-- CURSOR -->
+<div class="custom-cursor"></div>
+
 <!-- NAV -->
-<header class="nav">
-    <div class="logo">Portafolio - Brayan Castro</div>    <nav>
+<header
+    class="nav"
+    id="navbar"
+    role="banner"
+>
+    <div class="logo">
+        Portafolio - Brayan Castro
+    </div>    
+    <nav aria-label="Navegación principal">
         <a href="#home">Inicio</a>
         <a href="#portfolio">Portafolio</a>
+        <a href="#skills">Tecnologías</a>
         <a href="#about">Acerca de mí</a>
-        <a href="#cv">Sección de CV</a>
+        <a href="assets/cv-brayan-castro.pdf" download>Sección de CV</a>
     </nav>
 </header>
 
 <!-- HERO / PAGINA DE INICIO -->
 <section id="home" class="hero">
-    <div class="hero-content">
 
-        <!-- IDENTIDAD -->
-        <h1>Brayan Castro</h1>
-        <h2 class="subtitle">Ingeniero de Software | Full Stack Developer</h2>
+<!-- THREE BACKGROUND -->
+<canvas id="three-canvas"></canvas>
 
-        <!-- PROPUESTA DE VALOR -->
-        <p class="hero-description">
-            Desarrollo aplicaciones web escalables, APIs robustas y experiencias 
-            interactivas combinando ingeniería de software, arquitectura backend 
-            y desarrollo de videojuegos.
-        </p>
+    <!-- PARTICULAS -->
+    <div id="particles-js"></div>
 
-        <!-- BOTONES PRINCIPALES -->
-        <div class="hero-buttons">
-            <a href="#portfolio" class="btn">Ver Proyectos</a>
+    <!-- BLUR DECORATIVO -->
+    <div class="blur blur-1"></div>
+    <div class="blur blur-2"></div>
+
+    <div class="hero-container">
+
+        <!-- IZQUIERDA -->
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                💼 Software Engineer | Full Stack Developer
+                especializado en MERN & Java
+            </span>
+
+            <h1>Brayan Castro</h1>
+
+            <!-- TYPING -->
+            <h2 class="typing-text">
+                <span id="typed"></span>
+            </h2>
+
+            <p class="hero-description">
+
+                Desarrollo aplicaciones web escalables,
+                experiencias interactivas y arquitecturas
+                modernas combinando ingeniería de software,
+                desarrollo Full Stack y tecnologías creativas.
+
+            </p>
+
+            <!-- BOTONES -->
+            <div class="hero-buttons">
+
+                <a href="#portfolio" class="btn">
+                    Ver Proyectos
+                </a>
+
+                <a 
+                    href="assets/cv-brayan-castro.pdf"
+                    download
+                    class="btn btn-outline">
+
+                    Descargar CV
+
+                </a>
+
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="social-links">
+
+                <a href="https://www.linkedin.com/in/bandresdev/" aria-label="LinkedIn de Brayan Castro"
+                    target="_blank"
+                    class="social-icon">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </a>
+
+                <a 
+                    href="https://github.com/AcStarPlayer"
+                    aria-label="GitHub de Brayan Castro"
+                    target="_blank"
+                    class="social-icon">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+                <a href="https://t.me/bandresdev" aria-label="Telegram de Brayan Castro"
+                    target="_blank"
+                    class="social-icon">
+
+                    <i class="fa-brands fa-telegram"></i>
+
+                </a>
+
+            </div>
+
+            <!-- STATS -->
+            <div class="hero-stats">
+
+                <div class="stat-box">
+                    <h3>15+</h3>
+                    <p>Tecnologías</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>10+</h3>
+                    <p>Proyectos</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>FullStack</h3>
+                    <p>Developer</p>
+                </div>
+
+            </div>
 
         </div>
 
-        <!-- CONTACTO RAPIDO -->
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/bandresdev/" target="_blank" class="social-icon">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+        <!-- DERECHA -->
+        <div class="hero-image">
 
-            <a href="https://github.com/AcStarPlayer" target="_blank" class="social-icon">
-                <i class="fa-brands fa-github"></i>
-            </a>
+            <div class="image-wrapper">
 
-            <a href="https://t.me/bandresdev" target="_blank" class="social-icon">
-                <i class="fa-brands fa-telegram"></i>
-            </a>
+                <img
+                    src="https://res.cloudinary.com/dwpyi1f7b/image/upload/v1775525037/WhatsApp_Image_2026-04-05_at_9.44.39_PM__1_-removebg-preview_tvni3q.png"
+                    alt="Brayan Castro"
+                    class="floating-image"
+                    loading="lazy"
+                    decoding="async"
+                >
 
+            </div>
 
         </div>
-
-        <!-- CONTACTO DIRECTO -->
-        <p class="contact-mini">
-
-            <!-- EMAIL -->
-            <a href="mailto:bandres.dev@gmail.com" class="contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <span> Enviar correo </span>
-            </a>
-
-            <!-- UBICACIÓN -->
-            <a href="https://www.google.com/maps/place/Bucaramanga,+Santander"
-                target="_blank"
-                class="contact-item">
-
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Bucaramanga, Santander - Colombia</span>
-
-            </a>
-
-        </p>
 
     </div>
+
 </section>
 
 <!-- PORTFOLIO -->
 <section id="portfolio" class="section alt">
+
     <div class="container">
-        <h2>Portafolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <h3>Sistema Contable & Rutogramas</h3>
-                <p>Stack MERN. Automatización de registros y análisis comercial para CDA Practimoto.</p>
-                <button class="btn">Ver Proyecto</button>
-            </div>
-            <div class="portfolio-item">
-                <h3>E-commerce Autogestionable</h3>
-                <p>Arquitectura desacoplada con React y Node.js para gestión de catálogos masivos.</p>
-                <button class="btn">Ver Proyecto</button>
-            </div>
-            <div class="portfolio-item">
-                <h3>Videojuego - Unity</h3>
-                <p>Desarrollo de mecánicas interactivas y físicas avanzadas en C#.</p>
-                <button class="btn">Ver Proyecto</button>
-            </div>
+
+        <h2>Proyectos Destacados</h2>
+
+        <p class="portfolio-subtitle">
+            Soluciones modernas enfocadas en desarrollo Full Stack,
+            arquitectura backend y experiencias interactivas.
+        </p>
+
+        <!-- FILTROS -->
+        <div class="portfolio-filters">
+
+            <button class="filter-btn active" data-filter="all">
+                Todos
+            </button>
+
+            <button class="filter-btn" data-filter="web">
+                Web
+            </button>
+
+            <button class="filter-btn" data-filter="java">
+                Java
+            </button>
+
+            <button class="filter-btn" data-filter="game">
+                GameDev
+            </button>
+
         </div>
+
+        <!-- GRID -->
+        <div class="portfolio-grid">
+
+            <!-- PROYECTO 1 -->
+            <div class="portfolio-card" data-category="web">
+
+                <div class="portfolio-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+                        alt="Sistema Contable"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <div class="portfolio-tags">
+
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+
+                    </div>
+
+                    <h3>
+                        Sistema de Automatización Comercial
+                    </h3>
+
+                    <p class="project-problem">
+
+                        <strong>Problema:</strong>
+
+                        Empresas gestionaban rutas, inventario y
+                        reportes manualmente generando errores
+                        operativos y pérdida de tiempo.
+
+                    </p>
+
+                    <p class="project-solution">
+
+                        <strong>Solución:</strong>
+
+                        Desarrollo de una plataforma MERN para
+                        automatización de procesos comerciales,
+                        gestión de rutogramas y dashboards
+                        analíticos en tiempo real.
+
+                    </p>
+
+                    <div class="project-details">
+
+                        <div>
+                            <strong>Arquitectura:</strong>
+                            MERN desacoplado + APIs REST
+                        </div>
+
+                        <div>
+                            <strong>Implementación:</strong>
+                            JWT, autenticación segura,
+                            dashboards y CRUD dinámicos
+                        </div>
+
+                        <div>
+                            <strong>Resultado:</strong>
+                            Optimización operativa y reducción
+                            de procesos manuales
+                        </div>
+
+                    </div>
+
+                    <div class="project-metrics">
+
+                        <span>+40% eficiencia</span>
+                        <span>REST APIs</span>
+                        <span>JWT Security</span>
+                        <span>MERN Stack</span>
+
+                    </div>
+
+                    <div class="portfolio-buttons">
+
+                        <button
+                            class="btn open-modal"
+                            data-project="project1">
+
+                            Ver Más
+
+                        </button>
+
+                        <a href="https://github.com/"
+                            target="_blank"
+                            class="btn btn-outline">
+
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROYECTO 2 -->
+            <div class="portfolio-card" data-category="web">
+
+                <div class="portfolio-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+                        alt="Ecommerce"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <div class="portfolio-tags">
+
+                        <span>React</span>
+                        <span>Express</span>
+                        <span>PostgreSQL</span>
+
+                    </div>
+
+                    <h3>E-commerce Autogestionable</h3>
+
+                    <p>
+                        Arquitectura desacoplada para administración
+                        masiva de productos y catálogos digitales.
+                    </p>
+
+                    <div class="portfolio-buttons">
+
+                        <button
+                            class="btn open-modal"
+                            data-project="project2">
+
+                            Ver Más
+
+                        </button>
+
+                        <a href="https://github.com/"
+                            target="_blank"
+                            class="btn btn-outline">
+
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROYECTO 3 -->
+            <div class="portfolio-card" data-category="game">
+
+                <div class="portfolio-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                        alt="Unity"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+                <div class="portfolio-content">
+
+                    <div class="portfolio-tags">
+
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>Blender</span>
+
+                    </div>
+
+                    <h3>Videojuego 3D - Unity</h3>
+
+                    <p>
+                        Desarrollo de mecánicas interactivas,
+                        físicas avanzadas y modelado 3D.
+                    </p>
+
+                    <div class="portfolio-buttons">
+
+                        <button
+                            class="btn open-modal"
+                            data-project="project3">
+
+                            Ver Más
+
+                        </button>
+
+                        <a href="https://github.com/"
+                            target="_blank"
+                            class="btn btn-outline">
+
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+
 </section>
+
+<!-- MODAL -->
+<div class="portfolio-modal" id="portfolioModal">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <img id="modalImage" 
+            src="" alt="Proyecto" 
+            loading="lazy"
+            decoding="async"
+        >
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <div id="modalTech"></div>
+
+    </div>
+
+</div>
 
 <!-- ABOUT -->
 <section id="about" class="section">
@@ -134,6 +547,179 @@
 
         </div>
     </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+
+    <div class="container">
+
+        <h2>Tecnologías & Stack</h2>
+
+        <div class="tech-grid">
+
+            <div class="tech-card">
+                <i class="fa-brands fa-react"></i>
+                <span>React</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-node-js"></i>
+                <span>Node.js</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-database"></i>
+                <span>MongoDB</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-java"></i>
+                <span>Java</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-leaf"></i>
+                <span>Spring Boot</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS3</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-brands fa-bootstrap"></i>
+                <span>Bootstrap</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-code"></i>
+                <span>TypeScript</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>Flutter</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Unity</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-cube"></i>
+                <span>Blender</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-vr-cardboard"></i>
+                <span>Unreal Engine</span>
+            </div>
+
+            <div class="tech-card">
+                <i class="fa-solid fa-globe"></i>
+                <span>Django</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+
+    <div class="container">
+
+        <h2>Experiencia & Trayectoria</h2>
+
+        <div class="timeline">
+
+            <!-- ITEM -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>2026</span>
+
+                    <h3>Full Stack Developer</h3>
+
+                    <p>
+                        Desarrollo de plataformas MERN,
+                        automatización empresarial y
+                        soluciones escalables.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>2025</span>
+
+                    <h3>Software Engineering Projects</h3>
+
+                    <p>
+                        Arquitecturas backend,
+                        sistemas web modernos
+                        y APIs REST.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- ITEM -->
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>2024</span>
+
+                    <h3>Game Development</h3>
+
+                    <p>
+                        Desarrollo de videojuegos
+                        3D usando Unity, Blender
+                        y C#.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- CV -->
@@ -217,6 +803,35 @@
     </div>
 </section>
 
+<!-- GITHUB STATS -->
+<section class="section alt">
+
+    <div class="container">
+
+        <h2>GitHub Statistics</h2>
+
+        <div class="github-stats">
+
+            <img
+                src="https://github-readme-stats.vercel.app/api?username=AcStarPlayer&show_icons=true&theme=default"
+                alt="GitHub Stats"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=AcStarPlayer&layout=compact"
+                alt="Top Languages"
+                loading="lazy"
+                decoding="async"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
 <footer class="footer">
     <div class="footer-container">
 
@@ -231,7 +846,22 @@
     </div>
 </footer>
 
-<script src="js/main.js"></script>
+<!-- TYPING EFFECT -->
+<script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- PARTICLES -->
+<script defer src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<!-- THREE JS -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- GSAP -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<!-- NUEVOS SCRIPTS -->
+<script defer src="js/particles.js"></script>
+<script defer src="js/hero.js"></script>
+<script defer src="js/aaa.js"></script>
+
+<script defer src="js/portfolio.js"></script>
+<script defer src="js/main.js"></script>
 
 </body>
 </html>

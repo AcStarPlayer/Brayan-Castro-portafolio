@@ -33,3 +33,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// ======================
+// LOADER
+// ======================
+
+window.addEventListener('scroll', () => {
+
+    const scrollTop =
+    document.documentElement.scrollTop;
+
+    // NAVBAR
+    if(scrollTop > 50){
+        navbar.classList.add('navbar-scrolled');
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+    }
+
+    // PROGRESS
+    const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+    const progress =
+    (scrollTop / height) * 100;
+
+    progressBar.style.width =
+    progress + '%';
+
+});
