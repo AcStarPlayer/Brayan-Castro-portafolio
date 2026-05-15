@@ -92,3 +92,63 @@ contactForm.addEventListener("submit", function(e){
     });
 
 });
+
+// =========================
+// MENU MOBILE
+// =========================
+
+const menuToggle =
+document.getElementById('menu-toggle');
+
+const navLinks =
+document.getElementById('nav-links');
+
+const navItems =
+document.querySelectorAll('.nav-links a');
+
+// ABRIR / CERRAR MENU
+
+menuToggle.addEventListener('click', () => {
+
+    menuToggle.classList.toggle('active');
+
+    navLinks.classList.toggle('active');
+
+});
+
+// CERRAR AL DAR CLICK EN LINK
+
+navItems.forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        menuToggle.classList.remove('active');
+
+        navLinks.classList.remove('active');
+
+    });
+
+});
+
+// CERRAR SI SE HACE CLICK FUERA
+
+document.addEventListener('click', (e) => {
+
+    const isClickInsideMenu =
+    navLinks.contains(e.target);
+
+    const isClickButton =
+    menuToggle.contains(e.target);
+
+    if(
+        !isClickInsideMenu &&
+        !isClickButton
+    ){
+
+        menuToggle.classList.remove('active');
+
+        navLinks.classList.remove('active');
+
+    }
+
+});
