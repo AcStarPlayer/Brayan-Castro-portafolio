@@ -189,7 +189,7 @@
             <span>ACERCA DE MÍ</span>
 
             <h2>
-                Sobre mí
+                Mi trayectoria y experiencia
             </h2>
 
             <p>
@@ -674,9 +674,32 @@
 
                 </div>
 
-                <a href="#">
-                    Ver Proyecto
-                </a>
+                <div class="project-buttons">
+
+                    <a 
+                        href="https://github.com/AcStarPlayer"
+                        target="_blank"
+                        class="project-btn github-btn"
+                    >
+
+                        <i class="fa-brands fa-github"></i>
+
+                        Ver Proyecto
+
+                    </a>
+
+                    <a 
+                        href="#"
+                        class="project-btn demo-btn"
+                    >
+
+                        <i class="fa-solid fa-globe"></i>
+
+                        Demo
+
+                    </a>
+
+                </div>
 
             </div>
 
@@ -705,9 +728,32 @@
 
                 </div>
 
-                <a href="#">
-                    Ver Proyecto
-                </a>
+                <div class="project-buttons">
+
+                    <a 
+                        href="https://github.com/AcStarPlayer"
+                        target="_blank"
+                        class="project-btn github-btn"
+                    >
+
+                        <i class="fa-brands fa-github"></i>
+
+                        Ver Proyecto
+
+                    </a>
+
+                    <a 
+                        href="#"
+                        class="project-btn demo-btn"
+                    >
+
+                        <i class="fa-solid fa-globe"></i>
+
+                        Demo
+
+                    </a>
+
+                </div>
 
             </div>
 
@@ -763,28 +809,27 @@
 
     <div class="section-title">
 
-        <span>INSIGHTS</span>
+        <span>ENGINEERING BLOG</span>
 
-        <h2>Blog & Aprendizajes</h2>
+        <h2>Artículos Técnicos & Software Engineering</h2>
 
         <p class="blog-description">
-            Artículos sobre desarrollo Full Stack,
-            arquitectura de software, buenas prácticas
-            y tecnologías modernas.
+            Contenido técnico sobre backend moderno,
+            arquitectura de software, APIs REST,
+            seguridad, frontend, bases de datos
+            y buenas prácticas de ingeniería.
         </p>
 
     </div>
 
     <div class="blog-grid">
 
-        <!-- ARTÍCULO 1 -->
+        <!-- BACKEND -->
 
         <article class="blog-card">
 
             <div class="blog-image">
-
-                <img src="img/blog1.jpg" alt="Java Clean Code">
-
+                <img src="img/blog-backend.jpg" alt="Backend Spring Boot">
             </div>
 
             <div class="blog-content">
@@ -792,25 +837,25 @@
                 <div class="blog-meta">
 
                     <span>
-                        <i class="fa-regular fa-calendar"></i>
-                        Mayo 2026
+                        <i class="fa-solid fa-layer-group"></i>
+                        Backend
                     </span>
 
                     <span>
                         <i class="fa-regular fa-clock"></i>
-                        5 min lectura
+                        8 min lectura
                     </span>
 
                 </div>
 
                 <h3>
-                    Clean Code y SOLID en Java
+                    Cómo estructurar APIs REST profesionales con Spring Boot
                 </h3>
 
                 <p>
-                    Cómo estructurar aplicaciones escalables
-                    utilizando principios SOLID, arquitectura limpia
-                    y buenas prácticas en Spring Boot.
+                    Organización por capas, arquitectura limpia,
+                    controladores REST, servicios, DTOs y
+                    buenas prácticas backend modernas.
                 </p>
 
                 <a href="#" class="blog-link">
@@ -825,14 +870,12 @@
 
         </article>
 
-        <!-- ARTÍCULO 2 -->
+        <!-- JWT -->
 
         <article class="blog-card">
 
             <div class="blog-image">
-
-                <img src="img/blog2.jpg" alt="Spring Boot APIs">
-
+                <img src="img/blog-jwt.jpg" alt="JWT Security">
             </div>
 
             <div class="blog-content">
@@ -840,8 +883,8 @@
                 <div class="blog-meta">
 
                     <span>
-                        <i class="fa-regular fa-calendar"></i>
-                        Abril 2026
+                        <i class="fa-solid fa-shield-halved"></i>
+                        JWT & Security
                     </span>
 
                     <span>
@@ -852,13 +895,13 @@
                 </div>
 
                 <h3>
-                    APIs REST profesionales con Spring Boot
+                    JWT, Spring Security y autenticación moderna
                 </h3>
 
                 <p>
-                    Organización de controladores,
-                    autenticación JWT, manejo de errores
-                    y estructura backend moderna.
+                    Implementación de autenticación segura,
+                    filtros JWT, roles, permisos y protección
+                    de endpoints en Spring Boot.
                 </p>
 
                 <a href="#" class="blog-link">
@@ -873,14 +916,12 @@
 
         </article>
 
-        <!-- ARTÍCULO 3 -->
+        <!-- EXCEPCIONES -->
 
         <article class="blog-card">
 
             <div class="blog-image">
-
-                <img src="img/blog3.jpg" alt="React Frontend">
-
+                <img src="img/blog-errors.jpg" alt="Global Exception Handler">
             </div>
 
             <div class="blog-content">
@@ -888,8 +929,8 @@
                 <div class="blog-meta">
 
                     <span>
-                        <i class="fa-regular fa-calendar"></i>
-                        Marzo 2026
+                        <i class="fa-solid fa-bug"></i>
+                        Backend
                     </span>
 
                     <span>
@@ -900,13 +941,243 @@
                 </div>
 
                 <h3>
-                    React moderno y componentes reutilizables
+                    Manejo global de excepciones en Spring Boot
                 </h3>
 
                 <p>
-                    Mejores prácticas para construir interfaces
-                    limpias, escalables y optimizadas
-                    para experiencia de usuario.
+                    Cómo utilizar @ControllerAdvice,
+                    respuestas HTTP limpias y manejo
+                    profesional de errores en APIs REST.
+                </p>
+
+                <a href="#" class="blog-link">
+
+                    Leer artículo
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- VALIDACIONES -->
+
+        <article class="blog-card">
+
+            <div class="blog-image">
+                <img src="img/blog-validation.jpg" alt="Bean Validation">
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+
+                    <span>
+                        <i class="fa-solid fa-check-circle"></i>
+                        Bean Validation
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        5 min lectura
+                    </span>
+
+                </div>
+
+                <h3>
+                    Bean Validation y validaciones profesionales
+                </h3>
+
+                <p>
+                    Uso de @Valid, validaciones personalizadas,
+                    DTOs y control avanzado de datos
+                    en aplicaciones Spring Boot.
+                </p>
+
+                <a href="#" class="blog-link">
+
+                    Leer artículo
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- ARQUITECTURA -->
+
+        <article class="blog-card">
+
+            <div class="blog-image">
+                <img src="img/blog-architecture.jpg" alt="Software Architecture">
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+
+                    <span>
+                        <i class="fa-solid fa-sitemap"></i>
+                        Arquitectura
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        9 min lectura
+                    </span>
+
+                </div>
+
+                <h3>
+                    Arquitectura limpia y escalabilidad backend
+                </h3>
+
+                <p>
+                    Separación de responsabilidades,
+                    Clean Architecture, SOLID y diseño
+                    escalable para aplicaciones empresariales.
+                </p>
+
+                <a href="#" class="blog-link">
+
+                    Leer artículo
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- BASE DE DATOS -->
+
+        <article class="blog-card">
+
+            <div class="blog-image">
+                <img src="img/blog-database.jpg" alt="Database Design">
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+
+                    <span>
+                        <i class="fa-solid fa-database"></i>
+                        Base de Datos
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        6 min lectura
+                    </span>
+
+                </div>
+
+                <h3>
+                    Diseño de bases de datos profesionales
+                </h3>
+
+                <p>
+                    Modelado relacional, PostgreSQL,
+                    normalización, relaciones y optimización
+                    para sistemas escalables.
+                </p>
+
+                <a href="#" class="blog-link">
+
+                    Leer artículo
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- FRONTEND -->
+
+        <article class="blog-card">
+
+            <div class="blog-image">
+                <img src="img/blog-frontend.jpg" alt="Frontend React">
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+
+                    <span>
+                        <i class="fa-solid fa-code"></i>
+                        Frontend
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        5 min lectura
+                    </span>
+
+                </div>
+
+                <h3>
+                    Frontend moderno con React y componentes reutilizables
+                </h3>
+
+                <p>
+                    Arquitectura frontend moderna,
+                    componentes reutilizables,
+                    estados globales y buenas prácticas UI.
+                </p>
+
+                <a href="#" class="blog-link">
+
+                    Leer artículo
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- DEVOPS -->
+
+        <article class="blog-card">
+
+            <div class="blog-image">
+                <img src="img/blog-devops.jpg" alt="DevOps">
+            </div>
+
+            <div class="blog-content">
+
+                <div class="blog-meta">
+
+                    <span>
+                        <i class="fa-solid fa-server"></i>
+                        DevOps
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        8 min lectura
+                    </span>
+
+                </div>
+
+                <h3>
+                    DevOps para desarrolladores Full Stack
+                </h3>
+
+                <p>
+                    Docker, CI/CD, despliegue,
+                    automatización y herramientas modernas
+                    para ambientes productivos.
                 </p>
 
                 <a href="#" class="blog-link">
@@ -922,6 +1193,8 @@
         </article>
 
     </div>
+
+    
 
 </section>
 
