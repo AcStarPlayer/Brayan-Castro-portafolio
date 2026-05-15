@@ -55,3 +55,40 @@ counters.forEach(counter => {
     updateCounter();
 
 });
+
+// =========================
+// CONTACT FORM EMAILJS
+// =========================
+
+emailjs.init("QE9MFjled3V_Kwvwr");
+
+const contactForm =
+document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_7o3etze", // SERVICE ID
+        "template_efg840g",  // TEMPLATE ID
+        this
+    )
+
+    .then(() => {
+
+        alert("Mensaje enviado correctamente 🚀");
+
+        contactForm.reset();
+
+    })
+
+    .catch((error) => {
+
+        console.log(error);
+
+        alert("Error al enviar el mensaje ❌");
+
+    });
+
+});
