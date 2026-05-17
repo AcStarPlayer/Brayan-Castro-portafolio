@@ -931,6 +931,22 @@ section{
 
 }
 
+.experience-description{
+
+    max-width:900px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+    color:var(--gray);
+
+    line-height:2;
+
+    font-size:1rem;
+
+}
+
 .technologies{
 
     padding:90px 8%;
@@ -1056,7 +1072,14 @@ section{
 .timeline{
 
     display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
     gap:35px;
+
+    margin-top:60px;
+
 }
 
 .timeline-item{
