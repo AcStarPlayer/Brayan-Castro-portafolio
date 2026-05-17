@@ -12,9 +12,15 @@ html{
     scroll-behavior:smooth;
 }
 
+body,
+button,
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+
 body{
     font-family:'Poppins', sans-serif;
-    background:#07111f;
+    background:#061421;
     color:#ffffff;
     overflow-x:hidden;
 }
@@ -37,13 +43,13 @@ body::before{
 
     radial-gradient(
         circle at 20% 20%,
-        rgba(14,165,233,0.15),
+        rgba(46,196,182,0.15),
         transparent 30%
     ),
 
     radial-gradient(
         circle at 80% 30%,
-        rgba(251,191,36,0.10),
+        rgba(255,209,102,0.10),
         transparent 30%
     ),
 
@@ -106,16 +112,17 @@ body::before{
 
 :root{
 
-    --primary:#f6a400;
-    --secondary:#38bdf8;
-    --gold:#fbbf24;
+    --primary:#ff9f1c;
+    --secondary:#2ec4b6;
+    --gold:#ffd166;
 
     --dark:#07111f;
-    --dark-light:#0f7c82;
-    --card:#111c31;
+    --dark-light:#12344d;
+    --card:#102033;
 
     --white:#ffffff;
-    --gray:#94a3b8;
+    --gray:#b6c2cf;
+
     --border:rgba(255,255,255,0.08);
 
     --shadow:
@@ -196,7 +203,7 @@ body::before{
 
 .logo h2::after{
 
-    content:" Best Shop";
+    content:" Pet Community";
 
     color:var(--gold);
 
@@ -274,10 +281,10 @@ body::before{
 
     background:
     linear-gradient(
-        rgba(2,6,23,0.78),
-        rgba(2,6,23,0.92)
+        rgba(6,20,33,0.78),
+        rgba(6,20,33,0.92)
     ),
-    url('../imgProjects/1- Home.png');
+    url('../projects/imgGoodDoggy/Desktop.png');
 
     background-size:cover;
     background-position:center;
@@ -297,13 +304,13 @@ body::before{
 
     radial-gradient(
         circle at top left,
-        rgba(14,165,233,0.18),
+        rgba(46,196,182,0.18),
         transparent 30%
     ),
 
     radial-gradient(
         circle at bottom right,
-        rgba(251,191,36,0.10),
+        rgba(255,209,102,0.10),
         transparent 30%
     );
 
@@ -323,7 +330,7 @@ body::before{
     border-radius:50%;
 
     background:
-    rgba(14,165,233,0.12);
+    rgba(46,196,182,0.12);
 
     filter:blur(120px);
 
@@ -342,7 +349,7 @@ body::before{
     background:
     radial-gradient(
         circle at top right,
-        rgba(14,165,233,0.25),
+        rgba(46,196,182,0.25),
         transparent 40%
     );
 
@@ -381,7 +388,7 @@ body::before{
     border:
     1px solid rgba(255,255,255,0.12);
 
-    color:var(--gold);
+    color:#ffe29a;
 
     font-size:0.85rem;
 
@@ -473,7 +480,7 @@ body::before{
     color:var(--white);
 
     box-shadow:
-    0 10px 30px rgba(14,165,233,0.35);
+    0 10px 30px rgba(46,196,182,0.35);
 
 }
 
@@ -574,7 +581,7 @@ section{
 
     transform:translateY(-10px);
 
-    border-color:rgba(251,191,36,0.4);
+    border-color:rgba(255,209,102,0.4);
 
 }
 
@@ -643,7 +650,7 @@ section{
 
     gap:50px;
 
-    background:rgba(17,28,49,0.95);
+    background:rgba(16,32,51,0.96);
 
     border-radius:30px;
 
@@ -659,9 +666,14 @@ section{
 
 .card:hover{
 
-    transform:translateY(-10px);
+    transform:
+    translateY(-10px);
 
-    border-color:rgba(14,165,233,0.4);
+    border-color:
+    rgba(46,196,182,0.35);
+
+    box-shadow:
+    0 20px 50px rgba(46,196,182,0.12);
 
 }
 
@@ -689,7 +701,11 @@ section{
 
     transition:0.5s ease;
 
+    filter:saturate(1.05) contrast(1.02);
+
 }
+
+
 
 .card:hover .card-image img{
 
@@ -721,7 +737,7 @@ section{
 
     border-radius:40px;
 
-    background:rgba(14,165,233,0.15);
+    background:rgba(46,196,182,0.15);
 
     color:var(--secondary);
 
@@ -787,9 +803,9 @@ section{
 
 .card-tags span:hover{
 
-    background:rgba(14,165,233,0.15);
+    background:rgba(46,196,182,0.15);
 
-    border-color:rgba(14,165,233,0.3);
+    border-color:rgba(46,196,182,0.3);
 
     transform:translateY(-2px);
 
@@ -890,7 +906,7 @@ section{
 
     transform:translateY(-8px);
 
-    border-color:rgba(251,191,36,0.3);
+    border-color:rgba(255,209,102,0.3);
 
 }
 
@@ -909,6 +925,20 @@ section{
     color:var(--gray);
 
     line-height:1.8;
+
+}
+
+.footer{
+
+    background:
+    linear-gradient(
+        180deg,
+        #081521,
+        #06111b
+    );
+
+    border-top:
+    1px solid rgba(255,255,255,0.06);
 
 }
 
@@ -1139,8 +1169,8 @@ section{
 
     background:linear-gradient(
         135deg,
-        #2563eb,
-        #1d4ed8
+        #2ec4b6,
+        #1b9aaa
     );
 
     color:white;
@@ -1190,8 +1220,8 @@ section{
 
     background:linear-gradient(
         135deg,
-        #3b82f6,
-        #2563eb
+        #34d399,
+        #2ec4b6
     );
 
 }
@@ -1352,7 +1382,7 @@ section{
 
 .results-section{
     padding:120px 8%;
-    background:#020617;
+    background:#081521;
 }
 
 .results-subtitle{
@@ -1599,9 +1629,9 @@ section{
 .tech-tags span{
     padding:10px 16px;
 
-    background:rgba(0,212,255,0.08);
+    background:rgba(46,196,182,0.12);
 
-    border:1px solid rgba(0,212,255,0.18);
+    border:1px solid rgba(46,196,182,0.22);
 
     border-radius:50px;
 
@@ -1621,12 +1651,12 @@ section{
     background:
     radial-gradient(
         circle at top left,
-        rgba(14,165,233,0.12),
+        rgba(46,196,182,0.12),
         transparent 35%
     ),
     radial-gradient(
         circle at bottom right,
-        rgba(251,191,36,0.10),
+        rgba(255,209,102,0.10),
         transparent 35%
     ),
     #020617;
@@ -1700,7 +1730,7 @@ section{
     background:
     linear-gradient(
         135deg,
-        rgba(14,165,233,0.12),
+        rgba(46,196,182,0.12),
         transparent
     );
 
@@ -1719,7 +1749,7 @@ section{
     translateY(-12px);
 
     border-color:
-    rgba(14,165,233,0.3);
+    rgba(46,196,182,0.3);
 
 }
 
