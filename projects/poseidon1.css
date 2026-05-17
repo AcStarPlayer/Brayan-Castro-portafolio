@@ -414,8 +414,8 @@ body::before{
         #cbd5e1
     );
 
+    background-clip:text;  
     -webkit-background-clip:text;
-
     -webkit-text-fill-color:transparent;
 
 }
@@ -927,6 +927,8 @@ section{
 
     align-items:flex-start;
 
+    padding: 60px 90px 0;
+
 }
 
 /* ========================================= */
@@ -1060,6 +1062,24 @@ section{
 }
 
 /* ========================================= */
+/* FOOTER BOTTOM */
+/* ========================================= */
+
+.footer-bottom{
+    margin-top:60px;
+    padding:25px 0;
+
+    text-align:center;
+    color:#94a3b8;
+
+    font-size:0.9rem;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+}
+
+/* ========================================= */
 /* RESPONSIVE */
 /* ========================================= */
 
@@ -1078,17 +1098,15 @@ section{
     .footer-container{
 
         grid-template-columns:1fr;
+        padding: 0 25px;
 
     }
 
     .footer-brand{
 
         flex-direction:column;
-
         align-items:center;
-
         text-align:center;
-
     }
 
     .footer-links,
@@ -1096,10 +1114,85 @@ section{
     .footer-author{
 
         text-align:center;
-
         align-items:center;
 
     }
+
+}
+
+/* ========================================= */
+/* SCROLL TOP BUTTON */
+/* ========================================= */
+
+#scrollTopBtn{
+
+    position:fixed;
+
+    bottom:35px;
+    right:35px;
+
+    width:58px;
+    height:58px;
+
+    border:none;
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white;
+
+    font-size:1.5rem;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:
+    0 10px 30px rgba(37,99,235,.35);
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:
+    opacity .4s ease,
+    transform .4s ease,
+    background .3s ease;
+
+    z-index:999;
+
+}
+
+/* BOTÓN ACTIVO */
+
+#scrollTopBtn.show{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+/* HOVER */
+
+#scrollTopBtn:hover{
+
+    transform:translateY(-4px);
+
+    background:linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
 
 }
 
