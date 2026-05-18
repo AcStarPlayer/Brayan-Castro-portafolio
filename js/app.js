@@ -1,17 +1,17 @@
 // =========================
-// LOADER
+// PRELOADER PREMIUM
 // =========================
 
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
 
-    const loader =
-    document.getElementById('loader');
+    const preloader =
+    document.getElementById("preloader");
 
     setTimeout(() => {
 
-        loader.classList.add('hide-loader');
+        preloader.classList.add("hide");
 
-    }, 2000);
+    }, 3000);
 
 });
 
