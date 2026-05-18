@@ -33,3 +33,32 @@ scrollTopBtn.addEventListener("click", () => {
     });
 
 });
+
+const menuToggle =
+document.getElementById("menuToggle");
+
+const menu =
+document.querySelector(".menu");
+
+menuToggle.addEventListener("click", () => {
+
+    menuToggle.classList.toggle("active");
+
+    menu.classList.toggle("active");
+
+});
+
+// CERRAR AL HACER CLICK
+
+document.querySelectorAll(".menu a")
+.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        menuToggle.classList.remove("active");
+
+        menu.classList.remove("active");
+
+    });
+
+});

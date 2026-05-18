@@ -203,7 +203,7 @@ body::before{
 
 .logo h2::after{
 
-    content:" Pet Community";
+    content:"Community";
 
     color:var(--gold);
 
@@ -257,8 +257,81 @@ body::before{
 }
 
 /* ========================================= */
-/* HERO */
+/* MOBILE MENU */
 /* ========================================= */
+
+.menu-toggle{
+
+    width:55px;
+    height:55px;
+
+    border-radius:18px;
+
+    display:none;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:6px;
+
+    cursor:pointer;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    transition:0.4s ease;
+
+}
+
+.menu-toggle:hover{
+
+    background:
+    rgba(255,255,255,0.08);
+
+}
+
+.menu-toggle span{
+
+    width:26px;
+    height:2px;
+
+    background:white;
+
+    border-radius:10px;
+
+    transition:0.4s ease;
+
+}
+
+/* ANIMACIÓN X */
+
+.menu-toggle.active span:nth-child(1){
+
+    transform:
+    rotate(45deg)
+    translate(6px,6px);
+
+}
+
+.menu-toggle.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+.menu-toggle.active span:nth-child(3){
+
+    transform:
+    rotate(-45deg)
+    translate(5px,-5px);
+
+}
 
 /* ========================================= */
 /* HERO */
@@ -284,10 +357,10 @@ body::before{
         rgba(6,20,33,0.78),
         rgba(6,20,33,0.92)
     ),
-    url('../projects/imgGoodDoggy/Desktop.png');
+    url('../projects/imgGoodDoggy/logogooddoggy.png');
 
-    background-size:cover;
-    background-position:center;
+    background-size:contain;
+    background-position:center center;
     background-repeat:no-repeat;
 
 }
@@ -1266,13 +1339,54 @@ section{
 
 @media(max-width:768px){
 
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
     .menu{
+
+        position:absolute;
+
+        top:85px;
+        left:0;
+
+        width:100%;
+
+        background:rgba(7,17,31,0.98);
+
+        backdrop-filter:blur(15px);
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:25px;
+
+        padding:30px 0;
+
         display:none;
+
+        border-bottom:1px solid rgba(255,255,255,0.06);
+
+    }
+
+    .menu.active{
+
+    display:flex;
+
+}
+    .hero{
+
+        padding-top:140px;
     }
 
     .hero{
 
-        padding-top:140px;
+        background-size:75%;
+        min-height:85vh;
+
     }
 
     .hero-content h1{
@@ -1325,6 +1439,13 @@ section{
     .card-content h3{
 
         font-size:1.6rem;
+
+    }
+
+    .hero{
+
+        background-size:85%;
+        min-height:75vh;
 
     }
 
