@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
 
         preloader.classList.add("hide");
 
-    }, 3000);
+    }, 2000);
 
 });
 
